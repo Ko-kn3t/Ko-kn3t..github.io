@@ -1,37 +1,481 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Ko-kn3t/Ko-kn3t..github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en" >
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<head>
 
-### Markdown
+  <meta charset="UTF-8">
+ 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+  <title>&hearts; Days Counter &hearts;</title>
+  <title>thaelay</title>
 
-# Header 1
-## Header 2
-### Header 3
+<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Sarpanch:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=play" rel="stylesheet">
 
-- Bulleted
-- List
+  
+  
+  
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
 
-1. Numbered
-2. List
+body{
+    background-color: #000;
+}
 
-**Bold** and _Italic_ and `Code` text
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h1{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-family: Nosifer;
+    text-shadow: 0 0 0.5em red, 0 0 0.5em red;
+}
 
-[Link](url) and ![Image](src)
-```
+.we-are {
+    color: red;
+    font-size: 20px;
+    text-shadow: #000 2px 2px 2px;
+    letter-spacing: 2px;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+.message {
+    color: white;
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
 
-### Jekyll Themes
+.cn {
+    color: white;
+    font-size: 14px;
+    text-shadow: #000 2px 2px 2px;
+    letter-spacing: 2px;
+    -webkit-animation: fadeIn 3s ease-in;
+    animation: fadeIn 1s ease-in;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ko-kn3t/Ko-kn3t..github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+-webkit-@keyframes we-are {
+    from {scale: 1.1;}
+    to {scale: 0;}
+}
 
-### Support or Contact
+@keyframes we-are {
+    from {scale: 1.1;}
+    to {scale: 0;}
+}
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+-webkit-@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+  font-family: Iceland;
+  text-shadow: 0 0 0.5em cyan, 0 0 0.5em cyan;
+  
+}
+.dud {
+  color: #757575;
+}
+
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.animation-container span {
+  color: whitesmoke;
+  display: block;
+  font-size: 18px;
+  font-family: 'Helvetica';
+  text-shadow: 0 0 1px white;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  z-index: 1;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation-timing-function: ease-out;
+  animation-name: move;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+
+.scanline{
+  width:100%;
+  display:block;
+  background:#000;
+  height:4px;
+  position:relative;
+  z-index:3;
+  margin-bottom:5px;
+  opacity:0.1;
+}
+.buzz_wrapper span{
+  position:absolute;
+  -webkit-filter: blur(1px);
+  font-size:30px;
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+.buzz_wrapper span:nth-child(1){
+  color:red;
+  margin-left:-2px;
+  -webkit-filter: blur(2px);
+}
+.buzz_wrapper span:nth-child(2){
+  color:green;
+  margin-left:2px;
+  -webkit-filter: blur(2px);
+}
+.buzz_wrapper span:nth-child(3){
+  color:blue;
+  position:20px 0;
+  -webkit-filter: blur(1px);
+}
+.buzz_wrapper span:nth-child(4){
+  color:#fff;
+  -webkit-filter: blur(1px);
+  text-shadow:0 0 50px rgba(255,255,255,0.4);
+}
+.buzz_wrapper span:nth-child(5){
+  color:rgba(255,255,255,0.4);
+  -webkit-filter: blur(15px);
+}
+
+.buzz_wrapper span{
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+}
+
+@-webkit-keyframes blur {
+  0%   { -webkit-filter: blur(1px); opacity:0.8;}
+  50% { -webkit-filter: blur(1px); opacity:1; }
+  100%{ -webkit-filter: blur(1px); opacity:0.8; }
+}
+@-webkit-keyframes jerk {
+  50% { left:1px; }
+  51% { left:0; }
+}
+@-webkit-keyframes jerkup {
+  50% { top:1px; }
+  51% { top:0; }
+}
+
+.buzz_wrapper span:nth-child(3){
+  -webkit-animation: jerkblue 1s infinite;
+}
+@-webkit-keyframes jerkblue {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:10px; }
+}
+.buzz_wrapper span:nth-child(2){
+  -webkit-animation: jerkgreen 1s infinite;
+}
+@-webkit-keyframes jerkgreen {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:-10px; }
+}
+
+.buzz_wrapper .text{
+  -webkit-animation: jerkwhole 5s infinite;
+  position:relative;
+}
+@-webkit-keyframes jerkwhole {
+  30% {  }
+  40% { opacity:1; top:0; left:0;  -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
+  42% { opacity:0.8; top:0px; left:100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
+  43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  65% { }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  
+<div class="stars">
+
+<div class="twinkling">
+  <center><br><br><br>
+    
+    <div class="container">
+      <div class="text"></div>
+    </div><br><br><br>
+    <font face="Sarpanch" color="white" size"10" class="message">
+      &nbsp;  “If I know what love is, it is because of you.”  <font color="red">– Hermann Hesse </font>
+    </font><br>
+    <font face="Sarpanch" color="white" size"10" class="message"><font color="red"></font><br><br>
+    
+  </center>
+</div>
+<div class="clouds">
+</div>
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<center> <p id="demo" style="font-size: 2em; color: cyan; " ></p> </center>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 31, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = now - countDownDate;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " days  " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+    
+  // If the count down is over, write some text 
+  //if (distance < 0) {
+   // clearInterval(x);
+  //  document.getElementById("demo").innerHTML = "EXPIRED";
+  //}
+}, 1000);
+</script>
+
+
+
+
+
+  
+      <script id="rendered-js" >
+class TextScramble {
+  constructor(el) {
+    this.el = el;
+    this.chars = '!@#$%^&*()_-=+{}:"|<>?,./;';
+    this.update = this.update.bind(this);
+  }
+  setText(newText) {
+    const oldText = this.el.innerText;
+    const length = Math.max(oldText.length, newText.length);
+    const promise = new Promise(resolve => this.resolve = resolve);
+    this.queue = [];
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || '';
+      const to = newText[i] || '';
+      const start = Math.floor(Math.random() * 40);
+      const end = start + Math.floor(Math.random() * 40);
+      this.queue.push({ from, to, start, end });
+    }
+    cancelAnimationFrame(this.frameRequest);
+    this.frame = 0;
+    this.update();
+    return promise;
+  }
+  update() {
+    let output = '';
+    let complete = 0;
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i];
+      if (this.frame >= end) {
+        complete++;
+        output += to;
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar();
+          this.queue[i].char = char;
+        }
+        output += `<span class="dud">${char}</span>`;
+      } else {
+        output += from;
+      }
+    }
+    this.el.innerHTML = output;
+    if (complete === this.queue.length) {
+      this.resolve();
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update);
+      this.frame++;
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)];
+  }}
+
+var a = 'I Love You';
+var b = 'thaelay ko chit dl'
+const phrases = [a, b];
+
+
+const el = document.querySelector('.text');
+const fx = new TextScramble(el);
+
+let counter = 0;
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 1500);
+  });
+  counter = (counter + 1) % phrases.length;
+};
+
+next();
+
+'use strict';
+
+
+
+
+document.addEventListener('DOMContentLoaded', app.init);
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
