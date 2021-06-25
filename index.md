@@ -331,17 +331,15 @@ h1{
   
 <div class="stars">
 
-<div class="twinkling">
+
   <center><br><br><br>
-    
-  
     <font face="Sarpanch" color="white" size"10" class="message">
       &nbsp;  “If I know what love is, it is because of you.”  <font color="red">– Hermann Hesse </font>
     </font><br>
     <font face="Sarpanch" color="white" size"10" class="message"><font color="red"></font><br><br>
     
   </center>
-</div>
+
 <div class="clouds">
 </div>
 
