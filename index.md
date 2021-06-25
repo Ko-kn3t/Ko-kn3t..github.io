@@ -334,9 +334,7 @@ h1{
 <div class="twinkling">
   <center><br><br><br>
     
-    <div class="container">
-      <div class="text"></div>
-    </div><br><br><br>
+  
     <font face="Sarpanch" color="white" size"10" class="message">
       &nbsp;  “If I know what love is, it is because of you.”  <font color="red">– Hermann Hesse </font>
     </font><br>
